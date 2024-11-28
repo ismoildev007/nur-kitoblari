@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
     {
       DB::table('users')->insertGetId([
             'full_name' => 'DORA',
-            'email' => 'info@dora.uz',
-            'password' => Hash::make('dOR@_5324'),
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('admin@gmail.com'),
             'role' => 2, // Superadmin
             'phone' => '+998945135324',
             'status' => 1,
@@ -31,19 +31,6 @@ class UserSeeder extends Seeder
             'password' => Hash::make('ismoil_007u@gmail.com'),
             'role' => 2, // Superadmin
             'phone' => '+998919579717',
-            'status' => 1,
-            'last_login' => now(),
-            'region' => 'Tashkent',
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        $adminId = DB::table('users')->insertGetId([
-            'full_name' => 'Admin',
-            'email' => 'info@mi.com',
-            'password' => Hash::make('info@mi.com'),
-            'role' => 1, // Admin
-            'phone' => '987654321',
             'status' => 1,
             'last_login' => now(),
             'region' => 'Tashkent',
