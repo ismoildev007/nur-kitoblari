@@ -26,11 +26,6 @@
                                 <div class="px-2 py-3">
                                     <div class="d-flex justify-content-between">
                                         <h4 class="bold">Контакты</h4>
-                                        <div class="">
-                                            <div class="dataTables_filter">
-                                                <a href="{{ route('contacts.create') }}" class="btn btn-sm btn-primary">Добавить</a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="table-responsive">
@@ -38,16 +33,14 @@
                                         <thead>
                                         <tr>
                                             <th>№</th>
-                                            <th>Адрес (УЗ)</th>
-                                            <th>Адрес (РУ)</th>
-                                            <th>Адрес (АН)</th>
+                                            <th>Адрес</th>
                                             <th>Email</th>
-                                            <th>Телефон 1</th>
-                                            <th>Телефон 2</th>
+                                            <th>Телефон</th>
                                             <th>Facebook</th>
                                             <th>Instagram</th>
                                             <th>Telegram</th>
                                             <th>YouTube</th>
+                                            <th>linkedin</th>
                                             <th class="text-end">Действия</th>
                                         </tr>
                                         </thead>
@@ -55,12 +48,9 @@
                                         @foreach ($contacts as $contact)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $contact->address_uz }}</td>
-                                                <td>{{ $contact->address_ru }}</td>
-                                                <td>{{ $contact->address_en }}</td>
+                                                <td>{{ $contact->address }}</td>
                                                 <td>{{ $contact->email }}</td>
-                                                <td>{{ $contact->phone1 }}</td>
-                                                <td>{{ $contact->phone2 }}</td>
+                                                <td>{{ $contact->phone }}</td>
                                                 <td>
                                                     <a href="{{ $contact->facebook }}" target="_blank">{{ $contact->facebook ? 'Facebook' : '-' }}</a>
                                                 </td>
@@ -72,6 +62,9 @@
                                                 </td>
                                                 <td>
                                                     <a href="{{ $contact->youtube }}" target="_blank">{{ $contact->youtube ? 'YouTube' : '-' }}</a>
+                                                </td>
+                                                <td>
+                                                    <a href="{{ $contact->linkedin }}" target="_blank">{{ $contact->linkedin ? 'linkedin' : '-' }}</a>
                                                 </td>
                                                 <td>
                                                     <div class="hstack gap-2 justify-content-end">

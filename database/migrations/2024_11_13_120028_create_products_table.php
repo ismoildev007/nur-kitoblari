@@ -13,17 +13,11 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->text('name_uz')->nullable();
-            $table->text('name_ru')->nullable();
-            $table->text('name_en')->nullable();
-            $table->text('content_uz')->nullable();
-            $table->text('content_ru')->nullable();
-            $table->text('content_en')->nullable();
-            $table->text('description_uz')->nullable();
-            $table->text('description_ru')->nullable();
-            $table->text('description_en')->nullable();
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
+            $table->text('name')->nullable();
+            $table->text('content')->nullable();
+            $table->string('price')->nullable();
             $table->text('image')->nullable();
-
             $table->timestamps();
         });
     }

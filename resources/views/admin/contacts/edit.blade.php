@@ -40,37 +40,12 @@
                                     <h5 class="card-title">Контактная информация</h5>
                                 </div>
                                 <div class="card-body p-4">
-                                    <ul class="nav-tab-items-wrapper nav nav-justified invoice-overview-tab-item">
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link active" data-bs-toggle="tab" data-bs-target="#uzContent">O'zbekcha</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link" data-bs-toggle="tab" data-bs-target="#enContent">English</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link" data-bs-toggle="tab" data-bs-target="#ruContent">Русский</a>
-                                        </li>
-                                    </ul>
 
-                                    <div class="tab-content pt-3">
-                                        <div class="tab-pane fade show active" id="uzContent">
+                                    <div class="pt-3">
+                                        <div class="tab-pane fade show active">
                                             <div class="form-group pb-3">
-                                                <label for="address_uz">Адрес (UZ):</label>
-                                                <textarea class="form-control" id="address_uz" name="address_uz" rows="2">{{ old('address_uz', $contact->address_uz) }}</textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="enContent">
-                                            <div class="form-group pb-3">
-                                                <label for="address_en">Адрес (EN):</label>
-                                                <textarea class="form-control" id="address_en" name="address_en" rows="2">{{ old('address_en', $contact->address_en) }}</textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="ruContent">
-                                            <div class="form-group pb-3">
-                                                <label for="address_ru">Адрес (RU):</label>
-                                                <textarea class="form-control" id="address_ru" name="address_ru" rows="2">{{ old('address_ru', $contact->address_ru) }}</textarea>
+                                                <label for="address">Адрес :</label>
+                                                <textarea class="form-control" id="address" name="address" rows="2">{{ old('address', $contact->address) }}</textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -81,13 +56,8 @@
                                     </div>
 
                                     <div class="form-group pb-3">
-                                        <label for="phone1">Телефон 1:</label>
-                                        <input type="text" class="form-control" id="phone1" name="phone1" value="{{ old('phone1', $contact->phone1) }}">
-                                    </div>
-
-                                    <div class="form-group pb-3">
-                                        <label for="phone2">Телефон 2:</label>
-                                        <input type="text" class="form-control" id="phone2" name="phone2" value="{{ old('phone2', $contact->phone2) }}">
+                                        <label for="phone">Телефон :</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone', $contact->phone) }}">
                                     </div>
                                 </div>
                             </div>
@@ -116,6 +86,10 @@
                                     <div class="form-group pb-3">
                                         <label for="youtube">YouTube:</label>
                                         <input type="text" class="form-control" id="youtube" name="youtube" value="{{ old('youtube', $contact->youtube) }}">
+                                    </div>
+                                    <div class="form-group pb-3">
+                                        <label for="linkedin">Linkedin:</label>
+                                        <input type="text" class="form-control" id="linkedin" name="linkedin" value="{{ old('linkedin', $contact->linkedin) }}">
                                     </div>
                                 </div>
                             </div>

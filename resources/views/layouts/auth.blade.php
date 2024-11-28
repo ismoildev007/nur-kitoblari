@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keyword" content="">
-    <meta name="author" content="theme_ocean">
+    <meta name="author" content="Ismoil Usmonov, Nazarbek Rashidov">
     <!--! The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags !-->
     <!--! BEGIN: Apps Title-->
-    <title>Apteke 2</title>
+    <title>Nur Kitoblari</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('admins/assets/images/favicon.ico') }}">
