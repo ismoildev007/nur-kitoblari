@@ -51,11 +51,11 @@ class ContactController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'address_uz' => 'nullable|string',
+            'address' => 'nullable|string',
             'address_ru' => 'nullable|string',
             'address_en' => 'nullable|string',
             'email' => 'nullable|email',
-            'phone1' => 'nullable|string',
+            'phone' => 'nullable|string',
             'phone2' => 'nullable|string',
             'facebook' => 'nullable|url',
             'instagram' => 'nullable|url',

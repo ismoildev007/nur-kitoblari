@@ -1,9 +1,8 @@
 <?php
-$contact = \App\Models\Contact::first();
-?>
-<!-- footer-area-start -->
+$contact=\App\Models\Contact::first();
+    ?>
+
 <footer>
-    <!-- footer-top-start -->
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -11,10 +10,9 @@ $contact = \App\Models\Contact::first();
                     <div class="footer-top-menu bb-2">
                         <nav>
                             <ul>
-                                <li><a href="/">Bosh saxifa</a></li>
-                                <li><a href="/products">Kitoblar</a></li>
-                                <li><a href="/contact">contact us</a></li>
-                                <li><a href="javascript:void(0);">blog</a></li>
+                                <li><a href="">Bosh sahifa</a></li>
+                                <li><a href="">Kitoblar</a></li>
+                                <li><a href="">Biz bilan bog'laning</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -22,55 +20,32 @@ $contact = \App\Models\Contact::first();
             </div>
         </div>
     </div>
-    <!-- footer-top-start -->
-    <!-- footer-mid-start -->
+
     <div class="footer-mid ptb-50">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="single-footer br-2 xs-mb">
-                                <div class="footer-title mb-20">
-                                    <h3>Our company</h3>
-                                </div>
-                                <div class="footer-mid-menu">
-                                    <ul>
-                                        <li><a href="/contact">Contact us</a></li>
-                                        <li><a href="/products">Products</a></li>
-                                        <li><a href="javascript:void(0)">Blog</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="col-12">
+                    <div class="single-footer br-2 xs-mb">
+                        <div class="footer-title mb-20">
+                            <h3>Biz bilan bog'laning</h3>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="single-footer br-2 xs-mb">
-                                <div class="footer-title mb-20">
-                                    <h3>Your account</h3>
-                                </div>
-                                <div class="footer-mid-menu">
-                                    <ul>
-                                        <li><a href="{{ $contact->address }}">{{ $contact->address }}</a></li>
-                                        <li><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></li>
-                                        <li><a href="{{ $contact->email }}"> {{ $contact->email }}</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="footer-mid-menu">
+                            <ul>
+                                <li><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></li>
+                                <li><a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <div class="single-footer mrg-sm">
+
+                <div class="col-12">
+                    <div class="single-footer br-2 xs-mb">
                         <div class="footer-title mb-20">
-                            <h3>STORE INFORMATION</h3>
+                            <h3>DO'KON MANZILI</h3>
                         </div>
                         <div class="footer-contact">
-                            <div class="payment-img text-end">
-                                <a href="#"><img src="/assets/img/1.png" alt="payment" /></a>
-                            </div>
-                            <br>
-                            <div class="">
-                                <a href="https://t.me//ismoil_007u"><i class="fa fa-telegram"></i></a>
+                            <div class="location">
+                                <p><i class="fa fa-map-marker"></i> Maymanoq, Kasbi tumani, Qashqadaryo viloyati, O'zbekiston</p>
                             </div>
                         </div>
                     </div>
@@ -78,19 +53,54 @@ $contact = \App\Models\Contact::first();
             </div>
         </div>
     </div>
-    <!-- footer-mid-end -->
-    <!-- footer-bottom-start -->
+
     <div class="footer-bottom">
         <div class="container">
             <div class="row bt-2">
-                <div class="col-lg-6 col-md-6 col-12">
+                <div class="col-12">
                     <div class="copy-right-area">
-                        <p>&copy; 2022 <strong> Koparion </strong> Mede with ❤️ by <a href="https://hasthemes.com/" target="_blank"><strong>HasThemes</strong></a></p>
+                        <p>&copy; 2024 <strong>Nur Kitoblari</strong>. Sayt yaratuvchisi tomonidan barcha huquqlar himoyalangan.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- footer-bottom-end -->
 </footer>
-<!-- footer-area-end -->
+<style>
+    @media (max-width: 768px) {
+        .footer-top-menu ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .footer-mid-menu ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .single-footer {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact .location p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .footer-title h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+        }
+
+        .footer-top {
+            display: none; /* Mobilda menuni ochish uchun maxsus button qo'shish mumkin */
+        }
+    }
+
+</style>

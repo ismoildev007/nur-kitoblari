@@ -1,15 +1,14 @@
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 
 <header>
-    <div class="header-mid-area ptb-40">
+    <div class="header-mid-area ptb-40 col-sm-none ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-4 col-12">
+                <div class="col-lg-6 col-md-4  col-sm-none">
                     <div class="logo-area">
                         <a href="/" class="logo">Nur kitoblari</a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-5 col-12">
+                <div class="col-lg-6 col-md-5 col-12 col-sm-none">
                     <div class="header-search">
                         <form action="#">
                             <input type="text" placeholder="Search entire store here..." />
@@ -63,3 +62,20 @@
     </div>
     <!-- mobile-menu-area-end -->
 </header>
+
+<style>
+    .mean-container .mean-bar::after {
+        color: #ffffff;
+        content: "NUR KITOBLARI" !important;
+        font-size: 21px;
+        left: 0;
+        position: absolute;
+        top: 12px;
+    }
+    @media (max-width: 467px) {
+        .col-sm-none {
+            display: none;
+        }
+    }
+
+</style>

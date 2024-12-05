@@ -4,10 +4,10 @@
     Version: 2
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. Template Default CSS (body, link color, section etc)
 	2. Header-area
 		2.1 Header top area
@@ -43,7 +43,7 @@
 	27. Checkout
 	28. Wishlist
 	29. 404 page
-	
+
 
 -----------------------------------------------------------------------------------*/
 
@@ -140,11 +140,7 @@ input[type="checkbox"]:focus {
     outline-offset: -2px;
 }
 
-ul {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0
-}
+
 
 .clear {
     clear: both
@@ -1593,7 +1589,7 @@ body {
 }
 
 .product-wrapper:hover .product-price {
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
 }
 
@@ -1628,11 +1624,6 @@ body {
     right: 50%;
 }
 
-.product-wrapper:hover .product-link:after {
-    width: 100%;
-    left: 0;
-    right: 0;
-}
 
 .product-wrapper:hover .product-link {
     opacity: 1;
@@ -1661,11 +1652,11 @@ body {
     transition: .3s;
 }
 
-.product-link .product-button a i {
+.product-link2 .product-button a i {
     padding-right: 8px;
 }
 
-.product-link .add-to-link {
+.product-link2 .add-to-link {
     display: inline-block;
     float: right;
     position: relative;
@@ -1674,11 +1665,11 @@ body {
     z-index: 3;
 }
 
-.product-link .add-to-link ul li {
+.product-link2 .add-to-link ul li {
     display: inline-block;
 }
 
-.product-link .add-to-link ul li a {
+.product-link2 .add-to-link ul li a {
     display: inline-block;
     color: #333;
     font-size: 18px;
@@ -1690,11 +1681,8 @@ body {
     text-align: center;
 }
 
-.product-wrapper:hover .product-link .product-button {
-    transform: scale(1);
-}
 
-.product-wrapper:hover .product-link .add-to-link {
+.product-wrapper:hover .product-link2 .add-to-link {
     transform: scale(1);
 }
 

@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <form action="{{ route('categories.update', $product->id) }}" method="POST" enctype="multipart/form-data" novalidate class="needs-validation" onsubmit="updateEditorContent()">
+    <form action="{{ route('categories.update', $category->id) }}" method="POST" enctype="multipart/form-data" novalidate class="needs-validation" onsubmit="updateEditorContent()">
         @csrf
         @method('PUT')
 
@@ -45,7 +45,7 @@
                                         <div class="tab-pane fade show active" id="uzContent">
                                             <div class="form-group pb-3">
                                                 <label for="name">Name :</label>
-                                                <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $product->name) }}" required>
+                                                <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $category->name) }}" required>
                                             </div>
                                         </div>
                                     </div>
